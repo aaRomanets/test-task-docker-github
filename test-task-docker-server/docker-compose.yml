@@ -1,0 +1,10 @@
+version: '3.8'
+services:  
+  api:
+    build: .   
+    container_name: server-api-test-task
+    ports:      
+      - "4009:3009"   
+    volumes:     
+      - /app      
+      - /app/node_modules
